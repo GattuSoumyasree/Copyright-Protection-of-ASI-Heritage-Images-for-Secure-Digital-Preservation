@@ -1,4 +1,4 @@
-<img width="1568" height="561" alt="image" src="https://github.com/user-attachments/assets/697dff64-ce44-40ae-a149-ca04f0402a0f" /># Copyright-Protection-of-ASI-Heritage-Images-for-Secure-Digital-Preservation
+
 🛡️ Copyright Protection of ASI Heritage Images for Secure Digital Preservation
 This project implements a robust digital watermarking system to protect the intellectual property of ASI (Archaeological Survey of India) heritage images. It uses Singular Value Decomposition (SVD) techniques for embedding watermarks into images in a way that is invisible, secure, and resistant to common image-processing attacks.
 
@@ -115,5 +115,24 @@ These are the transformations applied to test the robustness of the watermarking
 **📸 Sample Results**
 •	Watermark embedding was performed with three alpha values: 0.1, 0.2, and 0.3.
 •	Evaluation metrics: PSNR, SSIM, and NCC were used to assess the watermark quality.
+
+<img width="601" height="606" alt="Screenshot 2025-07-28 184952" src="https://github.com/user-attachments/assets/3ae557f3-a843-46af-9806-f3bcb4df6071" />
+
+•	Alpha = 0.1 provided the best trade-off between robustness and imperceptibility.
+•	Attacks were applied only to alpha = 0.1 embedded watermarked images
+
+<img width="1568" height="561" alt="Screenshot 2025-07-28 185001" src="https://github.com/user-attachments/assets/a1fef978-1080-45b5-9f45-d9f2f34045c2" />
+
+Visual comparison of original watermark and extracted results after various image processing attacks on a sample heritage image.
+
+<img width="668" height="244" alt="Screenshot 2025-07-28 184909" src="https://github.com/user-attachments/assets/c8616f73-30e7-4a0e-ba79-6fd2231de2db" />
+
+<img width="662" height="303" alt="Screenshot 2025-07-28 184923" src="https://github.com/user-attachments/assets/3a6478d5-cd18-42da-a1d9-99c1257f90d3" />
+
+<img width="656" height="304" alt="Screenshot 2025-07-28 184935" src="https://github.com/user-attachments/assets/4e2299b1-4d29-4710-a644-3120caac37bc" />
+
+
+
+
 
 
