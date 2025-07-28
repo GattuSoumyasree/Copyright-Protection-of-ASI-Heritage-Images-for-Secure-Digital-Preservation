@@ -19,6 +19,7 @@ Measures watermark integrity and image quality after attacks.
 ✅ Modular Python codebase for ease of experimentation
 
 **📁 Project Structure**
+```
 📦 Copyright Protection of ASI Heritage Images for Secure Digital Preservation
 ├── 📂 input
 │   └── 📂 images                  # Original input images and watermark.jpg
@@ -37,7 +38,7 @@ Measures watermark integrity and image quality after attacks.
 ├── 📄 evaluate_attacks_all.py    # Evaluates watermark robustness after attacks
 ├── 📄 runall.py                  # Runs entire pipeline: embed → attack → extract → evaluate
 ├── 📄 requirements.txt           # Python libraries and dependencies
-
+```
 
 **⚙️ Requirements**
 Install all dependencies using:
