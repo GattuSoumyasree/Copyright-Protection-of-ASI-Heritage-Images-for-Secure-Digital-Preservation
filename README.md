@@ -45,62 +45,74 @@ Install all dependencies using:
 pip install -r requirements.txt
 📌 Make sure you have Python 3.7+ installed.
 
-🚀 Usage
+
+
+---
+
+### **🚀 Usage**
+
 Follow these steps to process your dataset end-to-end:
 
-🔹 1. Embed Watermark into Images
-Embeds the watermark into all original images and saves the results in output/watermarked/.
+---
 
-bash
-Copy
-Edit
+🔹 **1. Embed Watermark into Images**
+Embeds the watermark into all original images and saves the results in `output/watermarked/`.
+
+```bash
 python embed.py
-🔹 2. Extract Watermark from Clean Watermarked Images
-Extracts the watermark from the clean watermarked images (before any attack) and stores the results in output/extracted/.
+```
 
-bash
-Copy
-Edit
+---
+
+🔹 **2. Extract Watermark from Clean Watermarked Images**
+Extracts the watermark from the clean watermarked images (before any attack) and stores the results in `output/extracted/`.
+
+```bash
 python extract.py
-🔹 3. Evaluate Watermarked Images (Pre-Attack)
+```
+
+---
+
+🔹 **3. Evaluate Watermarked Images (Pre-Attack)**
 Computes evaluation metrics between:
 
-Original and watermarked images
+* Original and watermarked images
+* Original and extracted watermarks
 
-Original and extracted watermarks
+Results (PSNR, SSIM, NC) are stored in `output/evaluation/`.
 
-Results (PSNR, SSIM, NC) are stored in output/evaluation/.
-
-bash
-Copy
-Edit
+```bash
 python evaluate.py
-🔹 4. Apply Attacks to Watermarked Images
-Applies a variety of attacks (noise, rotation, compression, etc.) to watermarked images. Output is stored in output/attacks/.
+```
 
-bash
-Copy
-Edit
+---
+
+🔹 **4. Apply Attacks to Watermarked Images**
+Applies a variety of attacks (noise, rotation, compression, etc.) to watermarked images. Output is stored in `output/attacks/`.
+
+```bash
 python apply_attacks_all.py
-🔹 5. Extract Watermark from Attacked Images
-Extracts the watermark from each attacked image and stores them in output/extracted_from_attacks/.
+```
 
-bash
-Copy
-Edit
+---
+
+🔹 **5. Extract Watermark from Attacked Images**
+Extracts the watermark from each attacked image and stores them in `output/extracted_from_attacks/`.
+
+```bash
 python extract_from_attacks_all.py
-🔹 6. Evaluate Watermark Robustness After Attacks
+```
+
+---
+
+🔹 **6. Evaluate Watermark Robustness After Attacks**
 Measures the degradation of watermark quality after attacks using PSNR, SSIM, and NC between the original watermark and the extracted ones.
 
-bash
-Copy
-Edit
+```bash
 python evaluate_attacks_all.py
+```
 
 
-🔹 ✅ Optional: Run Entire Pipeline
-If you want to automate all the above steps in sequence:
-python runall.py
 
 **🧪 Supported Attacks**
 These are the transformations applied to test the robustness of the watermarking scheme:
