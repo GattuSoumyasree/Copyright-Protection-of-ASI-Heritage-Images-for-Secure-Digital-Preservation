@@ -2,7 +2,6 @@
 🛡️ Copyright Protection of ASI Heritage Images for Secure Digital Preservation
 This project implements a robust digital watermarking system to protect the intellectual property of ASI (Archaeological Survey of India) heritage images. It uses Singular Value Decomposition (SVD) techniques for embedding watermarks into images in a way that is invisible, secure, and resistant to common image-processing attacks.
 
-
 **🔍 Introduction**
 With the rise of digital media, protecting the ownership and authenticity of historical and cultural assets has become crucial. This project provides a secure watermarking framework that:
 Embeds a digital watermark into heritage images.
@@ -10,6 +9,7 @@ Allows extraction and verification of the watermark.
 Withstands various attacks (noise, rotation, compression, etc.).
 Measures watermark integrity and image quality after attacks.
 
+---
 **✨ Features**
 ✅ SVD-based robust watermark embedding
 ✅ Extraction from both original and attacked images
@@ -18,6 +18,7 @@ Measures watermark integrity and image quality after attacks.
 ✅ Quality evaluation with PSNR, SSIM, and Normalized Correlation
 ✅ Modular Python codebase for ease of experimentation
 
+---
 **📁 Project Structure**
 ```
 📦 Copyright Protection of ASI Heritage Images for Secure Digital Preservation
@@ -112,7 +113,7 @@ Measures the degradation of watermark quality after attacks using PSNR, SSIM, an
 python evaluate_attacks_all.py
 ```
 
-
+---
 
 **🧪 Supported Attacks**
 These are the transformations applied to test the robustness of the watermarking scheme:
@@ -130,6 +131,8 @@ These are the transformations applied to test the robustness of the watermarking
 | `resized`          | Scales the image (up or down)                           |
 | `filtered`         | Applies filtering (like median or edge filters)         |
 
+---
+
 **📊 Evaluation Metrics**
 
 | Metric   | Description                                                     |
@@ -138,6 +141,7 @@ These are the transformations applied to test the robustness of the watermarking
 | **SSIM** | Structural Similarity Index                                     |
 | **NC**   | Normalized Correlation between original and extracted watermark |
 
+---
 
 **📸 Sample Results**
 •	Watermark embedding was performed with three alpha values: 0.1, 0.2, and 0.3.
