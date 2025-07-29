@@ -2,14 +2,17 @@
 🛡️ Copyright Protection of ASI Heritage Images for Secure Digital Preservation
 This project implements a robust digital watermarking system to protect the intellectual property of ASI (Archaeological Survey of India) heritage images. It uses Singular Value Decomposition (SVD) techniques for embedding watermarks into images in a way that is invisible, secure, and resistant to common image-processing attacks.
 
+---
+```
 **🔍 Introduction**
 With the rise of digital media, protecting the ownership and authenticity of historical and cultural assets has become crucial. This project provides a secure watermarking framework that:
 Embeds a digital watermark into heritage images.
 Allows extraction and verification of the watermark.
 Withstands various attacks (noise, rotation, compression, etc.).
 Measures watermark integrity and image quality after attacks.
-
+```
 ---
+```
 **✨ Features**
 ✅ SVD-based robust watermark embedding
 ✅ Extraction from both original and attacked images
@@ -17,7 +20,7 @@ Measures watermark integrity and image quality after attacks.
 ✅ Resistance to various image-processing attacks
 ✅ Quality evaluation with PSNR, SSIM, and Normalized Correlation
 ✅ Modular Python codebase for ease of experimentation
-
+```
 ---
 **📁 Project Structure**
 ```
