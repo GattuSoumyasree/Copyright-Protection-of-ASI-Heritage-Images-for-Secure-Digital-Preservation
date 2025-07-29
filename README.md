@@ -45,42 +45,56 @@ Install all dependencies using:
 pip install -r requirements.txt
 📌 Make sure you have Python 3.7+ installed.
 
-**🚀 Usage**
-Follow these steps in order to process your dataset end-to-end:
+🚀 Usage
+Follow these steps to process your dataset end-to-end:
 
 🔹 1. Embed Watermark into Images
-Embeds the watermark into all original images and saves the results to output/watermarked/.
+Embeds the watermark into all original images and saves the results in output/watermarked/.
+
+bash
+Copy
+Edit
 python embed.py
-
-
 🔹 2. Extract Watermark from Clean Watermarked Images
-Extracts the watermark from the clean watermarked images (before any attack) and stores results in output/extracted/.
+Extracts the watermark from the clean watermarked images (before any attack) and stores the results in output/extracted/.
+
+bash
+Copy
+Edit
 python extract.py
-
-
 🔹 3. Evaluate Watermarked Images (Pre-Attack)
-Computes PSNR, SSIM, and Normalized Correlation (NC) between:
+Computes evaluation metrics between:
 
 Original and watermarked images
 
 Original and extracted watermarks
 
-Results are stored in output/evaluation/.
+Results (PSNR, SSIM, NC) are stored in output/evaluation/.
+
+bash
+Copy
+Edit
 python evaluate.py
-
-
 🔹 4. Apply Attacks to Watermarked Images
 Applies a variety of attacks (noise, rotation, compression, etc.) to watermarked images. Output is stored in output/attacks/.
+
+bash
+Copy
+Edit
 python apply_attacks_all.py
-
-
 🔹 5. Extract Watermark from Attacked Images
 Extracts the watermark from each attacked image and stores them in output/extracted_from_attacks/.
+
+bash
+Copy
+Edit
 python extract_from_attacks_all.py
-
-
 🔹 6. Evaluate Watermark Robustness After Attacks
-Measures the degradation of watermark quality after attacks using PSNR, SSIM, and NC between original watermark and extracted ones.
+Measures the degradation of watermark quality after attacks using PSNR, SSIM, and NC between the original watermark and the extracted ones.
+
+bash
+Copy
+Edit
 python evaluate_attacks_all.py
 
 
