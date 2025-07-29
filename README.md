@@ -5,8 +5,9 @@ This project implements a robust digital watermarking system to protect the inte
 ---
 
 **🔍 Introduction**
-```
+
 With the rise of digital media, protecting the ownership and authenticity of historical and cultural assets has become crucial. This project provides a secure watermarking framework that:
+```
 Embeds a digital watermark into heritage images.
 Allows extraction and verification of the watermark.
 Withstands various attacks (noise, rotation, compression, etc.).
